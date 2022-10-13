@@ -1,11 +1,12 @@
 import "./UserOutput.css";
+import Wrapper from "../Wrapper/Wrapper";
 const UserOutput = (props) => {
     return (
-        <div className="data-container">
+        <Wrapper className="data-container">
             <div>
                 {props.name} - {props.age}
             </div>
-        </div>
+        </Wrapper>
     );
 };
 

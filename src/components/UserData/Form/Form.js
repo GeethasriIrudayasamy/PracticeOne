@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Button from "../UI/Button/Button";
 import ErrorCard from "../ErrorCard/ErrorCard";
 import "./Form.css";
-import Card from "../UI/Card/Card";
+import Card from "../../UI/Card/Card";
+import Button from "../../UI/Button/Button";
+import Wrapper from "../Wrapper/Wrapper";
 
 const Form = (props) => {
     const [enteredName, setEnteredName] = useState("");
@@ -46,7 +47,7 @@ const Form = (props) => {
     };
 
     return (
-        <div>
+        <Wrapper>
             {isNotValid && (
                 <ErrorCard
                     message={isNotValid.message}
@@ -80,7 +81,7 @@ const Form = (props) => {
                     </form>
                 </Card>
             </div>
-        </div>
+        </Wrapper>
     );
 };
 export default Form;

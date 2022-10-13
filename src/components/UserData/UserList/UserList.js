@@ -1,7 +1,8 @@
 import UserOutput from "../UserOutput/UserOutput";
+import Wrapper from "../Wrapper/Wrapper";
 const UserList = (props) => {
     return (
-        <div>
+        <Wrapper>
             {props.userData.map((user) => (
                 <UserOutput
                     key={user.id}
@@ -10,7 +11,7 @@ const UserList = (props) => {
                     id={user.id}
                 ></UserOutput>
             ))}
-        </div>
+        </Wrapper>
     );
 };
 
