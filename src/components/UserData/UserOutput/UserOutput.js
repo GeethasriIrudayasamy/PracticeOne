@@ -4,9 +4,7 @@ const UserOutput = (props) => {
     return (
         <Wrapper>
             <div className="data-container">
-                <div>
-                    {props.name} - {props.age}
-                </div>
+                {props.name} - {props.age}
             </div>
         </Wrapper>
     );
