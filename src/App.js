@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Form from "./Components/Form/Form";
 
-import UserList from "./Components/UserList/UserList";
+import UserList from "./Components/UserData/UserList/UserList";
 
 function App() {
     const [userData, setUserData] = useState([]);
