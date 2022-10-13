@@ -5,22 +5,14 @@
     left: 30%;
 }
 
-.card-body header {
+.card-container header {
     padding: 1rem;
     background: #4675e0;
     color: white;
     border-radius: 3px;
 }
 
-.card-body {
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
-    background: white;
-    border-radius: 3px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-.card-body body {
+.card-container body {
     margin-top: 50px;
     margin-bottom: 50px;
 }

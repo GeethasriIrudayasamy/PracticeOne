@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "../UI/Button/Button";
 import ErrorCard from "../ErrorCard/ErrorCard";
 import "./Form.css";
+import Card from "../UI/Card/Card";
 
 const Form = (props) => {
     const [enteredName, setEnteredName] = useState("");
@@ -53,29 +54,31 @@ const Form = (props) => {
                 ></ErrorCard>
             )}
             <div className="container">
-                <form onSubmit={SubmitHandler}>
-                    <div>
-                        <label>User Name</label>
-                        <input
-                            className="form-input"
-                            type="text"
-                            value={enteredName}
-                            onChange={UserNameHandler}
-                        />
-                    </div>
-                    <div>
-                        <label>Age</label>
-                        <input
-                            className="form-input"
-                            type="number"
-                            value={enteredAge}
-                            onChange={AgeHandler}
-                        />
-                    </div>
-                    <div>
-                        <Button type="submit">Add User</Button>
-                    </div>
-                </form>
+                <Card>
+                    <form onSubmit={SubmitHandler}>
+                        <div>
+                            <label>User Name</label>
+                            <input
+                                className="form-input"
+                                type="text"
+                                value={enteredName}
+                                onChange={UserNameHandler}
+                            />
+                        </div>
+                        <div>
+                            <label>Age</label>
+                            <input
+                                className="form-input"
+                                type="number"
+                                value={enteredAge}
+                                onChange={AgeHandler}
+                            />
+                        </div>
+                        <div>
+                            <Button type="submit">Add User</Button>
+                        </div>
+                    </form>
+                </Card>
             </div>
         </div>
     );

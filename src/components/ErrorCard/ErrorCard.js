@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "../UI/Button/Button";
+import Card from "../UI/Card/Card";
 import "./ErrorCard.css";
 
 const ErrorCard = (props) => {
     return (
         <div className="card-container">
-            <div className="card-body">
+            <Card>
                 <header>
                     <h2>Invalid input</h2>
                 </header>
@@ -17,7 +18,7 @@ const ErrorCard = (props) => {
                         Okay
                     </Button>
                 </footer>
-            </div>
+            </Card>
         </div>
     );
 };
