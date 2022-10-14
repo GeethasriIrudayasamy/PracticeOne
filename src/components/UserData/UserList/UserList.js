@@ -8,6 +8,7 @@ const UserList = (props) => {
                     key={user.id}
                     name={user.name}
                     age={user.age}
+                    college={user.college}
                     id={user.id}
                 ></UserOutput>
             ))}

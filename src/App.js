@@ -11,6 +11,7 @@ function App() {
             updatedUserData.unshift({
                 name: eneteredUserData.name,
                 age: +eneteredUserData.age,
+                college: eneteredUserData.college,
                 id: Math.random().toString(),
             });
             console.log(updatedUserData);
